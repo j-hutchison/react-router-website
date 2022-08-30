@@ -19,8 +19,8 @@ const Navbar = () => {
 						<i className="fa-brands fa-typo3"></i>
 					</NavLink>
 				</div>
-				<div className={classes.menu}>
-					<ul>
+				<div className={classes.heightFix}>
+					<ul className={classes.menu}>
 						<li className={classes["menu-item"]}>
 							<NavLink className={navStyles} to="/home">
 								Home
@@ -36,7 +36,9 @@ const Navbar = () => {
 								Products
 							</NavLink>
 						</li>
-						<li className={classes["menu-item"]}>
+						<li
+							className={`${classes["menu-item"]} ${classes["menu-item-center"]}`}
+						>
 							<NavLink className={btnNavStyles} to="/sign-up">
 								Sign Up
 							</NavLink>

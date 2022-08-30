@@ -1,0 +1,6 @@
+.hero {
+	height: calc(100vh - 9rem);
+	background-color: red;
+
+	display: flex;
+}
