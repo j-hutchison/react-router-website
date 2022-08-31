@@ -40,13 +40,18 @@ const Gallery = (props) => {
 	};
 
 	return (
-		<div className={classes.gallery}>
-			<Card data={card1}></Card>
-			<Card data={card2}></Card>
-			<Card data={card3}></Card>
-			<Card data={card4}></Card>
-			<Card data={card5}></Card>
-		</div>
+		<>
+			<h2 className={classes["gallery-heading"]}>
+				Check out these EPIC destinations!
+			</h2>
+			<div className={classes.gallery}>
+				<Card data={card1}></Card>
+				<Card data={card2}></Card>
+				<Card data={card3}></Card>
+				<Card data={card4}></Card>
+				<Card data={card5}></Card>
+			</div>
+		</>
 	);
 };
 

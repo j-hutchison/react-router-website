@@ -3,8 +3,15 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 3rem;
-	background: var(--color-white);
-	padding: 5rem 20rem;
+
+	padding: 2rem 20rem;
+}
+
+.gallery-heading {
+	font-size: 3.2rem;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 .gallery > * {

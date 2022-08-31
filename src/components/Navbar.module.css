@@ -30,7 +30,11 @@
 
 	color: var(--color-white);
 	text-decoration: none;
-	font-size: 3.5rem;
+	font-size: 5.5rem;
+}
+
+.logo span {
+	font-size: 3.2rem;
 }
 
 .menu {
