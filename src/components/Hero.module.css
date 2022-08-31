@@ -1,6 +1,94 @@
 .hero {
+	position: relative;
 	height: calc(100vh - 9rem);
-	background-color: red;
+	/* background-color: red; */
+}
+
+#hero-bg-video {
+	width: 100vw;
+	height: 100%;
+
+	object-fit: cover;
+
+	transform: scale();
+	z-index: 1;
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 100%;
+
+	color: var(--color-white);
 
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	gap: 5rem;
+	z-index: 9999;
+}
+
+.heading-primary {
+	font-size: 9.6rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+.heading-secondary {
+	font-size: 3.6rem;
+}
+.cta {
+	display: flex;
+	gap: 2rem;
+}
+
+.btn {
+	color: var(--color-white);
+	text-transform: uppercase;
+
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.1rem;
+
+	border: none;
+	padding: 1.5rem 2.5rem;
+
+	transition: all 0.2s ease-in;
+}
+.btn:hover {
+	cursor: pointer;
+}
+.btn-transparent {
+	background-color: transparent;
+	border: 2px solid var(--color-white);
+	border-radius: 2px;
+}
+.btn-transparent:hover,
+.btn-transparent:active {
+	background-color: var(--color-white);
+	color: var(--color-black);
+	border: 2px solid var(--color-white);
+}
+.btn-white {
+	background-color: var(--color-white);
+	letter-spacing: -0.05rem;
+	color: var(--color-black);
+	border: 2px solid var(--color-white);
+	border-radius: 2px;
+}
+.btn-white:hover,
+.btn-white:active {
+	background-color: transparent;
+	color: var(--color-white);
+	border: 2px solid var(--color-white);
+	cursor: pointer;
+}
+.btn-w-icon {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }

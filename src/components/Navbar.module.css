@@ -1,6 +1,7 @@
 :root {
 	--color-black: #000;
 	--color-white: rgb(223, 223, 223);
+	--color-pure-white: #fff;
 }
 
 .heightFix {
@@ -34,7 +35,7 @@
 
 .menu {
 	display: flex;
-	gap: 8rem;
+	gap: 6rem;
 }
 .menu-item {
 	list-style: none;

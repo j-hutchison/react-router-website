@@ -1,11 +1,12 @@
 import classes from "./Home.module.css";
 import Hero from "../components/Hero";
+import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
 	return (
 		<div>
 			<Hero></Hero>
-			<h1>HOME PAGE</h1>
+			<Gallery></Gallery>
 		</div>
 	);
 };
