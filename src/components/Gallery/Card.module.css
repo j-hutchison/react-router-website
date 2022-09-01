@@ -23,12 +23,12 @@
 }
 
 .sm {
-	height: 30rem;
+	height: 45vh;
 	width: 30%;
 }
 
 .lg {
-	height: 40rem;
+	height: 60vh;
 	width: 48%;
 }
 
@@ -88,4 +88,45 @@
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 700;
+}
+
+/* 800px */
+@media (max-width: 51em) {
+	.sm {
+		height: 45vh;
+		width: 28vw;
+	}
+
+	.lg {
+		height: 60vh;
+		width: 44vw;
+	}
+}
+
+/* 675px */
+@media (max-width: 43em) {
+	.sm {
+		height: 40vh;
+		width: 28vw;
+		min-height: 25rem;
+	}
+
+	.lg {
+		height: 50vh;
+		width: 44vw;
+		min-height: 30rem;
+	}
+}
+
+/* 536px */
+@media (max-width: 34em) {
+	.sm {
+		height: 40rem;
+		width: 40rem;
+	}
+
+	.lg {
+		height: 40rem;
+		width: 40rem;
+	}
 }

@@ -78,3 +78,46 @@ span {
 	text-decoration: underline;
 	color: var(--color-white);
 }
+
+/* 1120px */
+@media (max-width: 74em) {
+	.sitemap {
+		display: flex;
+		gap: 4rem;
+	}
+
+	.sitemap-heading {
+		font-size: 2rem;
+	}
+	.footer-list-item {
+		font-size: 1.4rem;
+	}
+}
+
+/* 928px */
+@media (max-width: 58em) {
+	.sitemap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 5rem;
+	}
+
+	.subscribe {
+		margin-bottom: 3rem;
+	}
+}
+
+/* 675px */
+@media (max-width: 43em) {
+	.footer {
+		padding: 8rem 10rem 4rem;
+	}
+	strong {
+		text-align: center;
+		font-size: 2rem;
+	}
+	span {
+		font-size: 1.4rem;
+	}
+}

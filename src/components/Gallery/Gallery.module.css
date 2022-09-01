@@ -14,5 +14,33 @@
 	text-align: center;
 }
 
-.gallery > * {
+/* 1120px */
+@media (max-width: 74em) {
+	.gallery {
+		padding: 2rem 8rem;
+	}
+}
+
+/* 928px */
+@media (max-width: 58em) {
+	.gallery {
+		padding: 2rem 2rem;
+	}
+}
+
+/* 800px */
+@media (max-width: 51em) {
+	.gallery {
+		padding: 2rem 0;
+		justify-content: center;
+	}
+}
+
+/* 536px */
+@media (max-width: 34em) {
+	.gallery {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
