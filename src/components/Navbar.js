@@ -1,13 +1,21 @@
+import { useState } from "react";
+
 import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
+	const [showMobileNavbar, setShowMobileNavbar] = useState(false);
+
 	const navStyles = (navData) => {
 		return `${classes["menu-item-link"]} ${navData.isActive && classes.active}`;
 	};
 
 	const btnNavStyles = (navData) => {
 		return `${classes["menu-item-btn"]}`;
+	};
+
+	const handleMobileMenuBtnClick = () => {
+		setShowMobileNavbar(!showMobileNavbar);
 	};
 
 	return (
@@ -20,7 +28,17 @@ const Navbar = () => {
 					</NavLink>
 				</div>
 				<div className={classes.heightFix}>
-					<ul className={classes.menu}>
+					<div
+						onClick={handleMobileMenuBtnClick}
+						className={classes["mobile-menubars"]}
+					>
+						<i className="fa-solid fa-bars"></i>
+					</div>
+					<ul
+						className={`${classes.menu} ${
+							showMobileNavbar ? classes.transition : classes["transition-away"]
+						}`}
+					>
 						<li className={classes["menu-item"]}>
 							<NavLink className={navStyles} to="/home">
 								Home

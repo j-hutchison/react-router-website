@@ -1,0 +1,8 @@
+/* 800px */
+@media (max-width: 50em) {
+	.app {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+}

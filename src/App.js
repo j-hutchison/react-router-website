@@ -4,9 +4,11 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
 
+import classes from "./App.module.css";
+
 function App() {
 	return (
-		<div>
+		<div className={classes.app}>
 			<Navbar></Navbar>
 			<main>
 				<Routes>
