@@ -1,11 +1,7 @@
-import { useState } from "react";
-
 import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
 
-const Navbar = () => {
-	const [showMobileNavbar, setShowMobileNavbar] = useState(false);
-
+const Navbar = (props) => {
 	const navStyles = (navData) => {
 		return `${classes["menu-item-link"]} ${navData.isActive && classes.active}`;
 	};
@@ -14,8 +10,9 @@ const Navbar = () => {
 		return `${classes["menu-item-btn"]}`;
 	};
 
+	const showMobileNavbar = props.getterSetter();
 	const handleMobileMenuBtnClick = () => {
-		setShowMobileNavbar(!showMobileNavbar);
+		props.getterSetter("toggle");
 	};
 
 	return (

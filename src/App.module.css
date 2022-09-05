@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* CSS RESET */
+html {
+	font-size: 62.5%;
+	font-family: "PT Sans", sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--color-white);
+}
+
+*:focus {
+	outline: none;
+}
+
 /* 800px */
 @media (max-width: 50em) {
 	.app {
